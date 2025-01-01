@@ -1,0 +1,8 @@
+<main class="flex flow-row">
+  <div class="mx-5">
+    <%= live_render(assigns[:conn] || assigns[:socket], TestWeb.SidebarLive, sticky: true, id: "sidebar") %>
+  </div>
+  <div class="">
+    {@inner_content}
+  </div>
+</main>
